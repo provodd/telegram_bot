@@ -26,8 +26,8 @@ class MessageService
 
         $msg = "<b>Прайс-лист</b>";
         $msg .= "\n";
-        $msg .= "1. Демо  - 100р\n";
-        $msg .= "2. Фул  - 350р\n";
+        $msg .= "Товар 1 - 100р\n";
+        $msg .= "Товар 2 - 350р\n";
         $msg .= "\n";
         $msg .= "\n";
 
@@ -70,7 +70,7 @@ class MessageService
 
     public function buy(): array
     {
-        $msg = 'Купить  <a href="https://my.qiwi.com/Ruslan-NSlWt9EywG">по ссылке</a>';
+        $msg = 'Здесь может быть <a href="https://github.com/provodd/telegram_bot">cсылка на платежную систему</a>';
         return [
             'chat_id' => $this->chat_id,
             'text'    => $msg,
